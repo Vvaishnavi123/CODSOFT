@@ -52,20 +52,15 @@ def generate_password(length, count):
 #create rock,paper ,scissor game using pyhton
 # import random module
 import random
-import random
 # print multiline instruction
 # performstring concatenation of string
-print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
+print('Winning rules of  game are :\n'
       + "Rock vs Paper -> Paper wins \n"
       + "Rock vs Scissors -> Rock wins \n"
       + "Paper vs Scissors -> Scissor wins \n")
- 
-while True:
-     
-    print("Enter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors \n")
-     
-    # take the input from user
-     
+ while True:
+      print("Enter choice \n :1 - Rock \n 2 - Paper \n 3 - Scissors \n")
+      # take the input from user
     choice=int(input("Enter your choice :"))
      
      # OR is the short-circuit operator
@@ -74,19 +69,19 @@ while True:
      
     # looping until user enter invalid input
     while choice > 3 or choice <1:
-      choice=int(input('Enter a valid choice please ☺'))
+      choice=int(input("Enter a valid choice please !"))
          
         # initialize value of choice_name variable
 # corresponding to the choice value
     if choice == 1:
-        choice_name= 'Rock'
+        choicename= 'Rock'
     elif choice == 2:
-        choice_name= 'Paper'
+        choicename= 'Paper'
     else:
-        choice_name= 'Scissors'
+        choicename= 'Scissors'
          
         # print user choice
-    print('User choice is \n',choice_name)
+    print('User choice is \n',choicename)
     print('Now its Computers Turn....')
      
     # Computer chooses randomly any number
@@ -94,12 +89,12 @@ while True:
     # of random module
     comp_choice = random.randint(1,3)
      
-    # looping until comp_choice value
+    # looping until compchoice value
     # is equal to the choice value
     while comp_choice == choice:
         comp_choice = random.randint(1,3)
          
-     # initialize value of comp_choice_name
+     # initialize value of compchoice name
     # variable corresponding to the choice value
     if comp_choice == 1:
         comp_choice_name = 'rocK'
